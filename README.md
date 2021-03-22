@@ -1,3 +1,12 @@
+CHANGES FROM THE ORIGINAL
+==============
+
+This repo has a single change compared to the main ODK Central repository. In this version, the PostgreSQL volume is bound to `./files/postgresql`. This has 2 effects: 
+ - The database is now inside the main installation folder, so a backup of the system can be made more easily;
+ - If `docker-compose down` is accidentally run, it will not cause the database volume to become unlinked.
+
+If you are installing ODK Central fresh, it's recommended to start from the [original repo](https://github.com/getodk/central)! That said, on to the main README... 
+
 ODK Central
 ===========
 
