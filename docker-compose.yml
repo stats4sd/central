@@ -3,7 +3,7 @@ services:
   postgres:
     image: "postgres:9.6"
     volumes:
-      - /var/lib/postgresql/data
+      - ./files/postgresql:/var/lib/postgresql/data
     environment:
       POSTGRES_USER: odk
       POSTGRES_PASSWORD: odk
